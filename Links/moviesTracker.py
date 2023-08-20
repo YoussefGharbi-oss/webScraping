@@ -14,14 +14,20 @@ headers = {
 }
 
 
-dict = {
+movies_url = {
     "top_fav_url": "https://www.imdb.com/chart/top/?ref_=nv_mv_250",
     "Box_office_link": "https://www.imdb.com/chart/boxoffice/?ref_=nv_ch_cht",
     "my_top_100": "https://www.imdb.com/chart/moviemeter/?ref_=nv_mv_mpm",
 }
-for key in dict:
-    link_tracker(dict[key], headers,key)
-    time.sleep(5)
-    print(" Item Succesfully tracked")
+def get_movies():
+    """
+    Purpose: one
+    """
+    for key in movies_url:
+        link_tracker(movies_url[key], headers,key)
+        time.sleep(5)
+        print(" Item Succesfully tracked")
+    
+# end def
 
 

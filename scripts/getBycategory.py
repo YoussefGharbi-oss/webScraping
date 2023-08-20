@@ -25,7 +25,7 @@ def category_tracker(url, headers, name):
 
                 try:
                     if "/search" in data and "ft_movie" in data and text in data:
-                        final_link = text + ":" + " https://www.imdb.com/" + data
+                        final_link =  f"{text}: https://www.imdb.com/{data}" 
                         f.write(final_link + "\n")
 
                 except Exception as e:

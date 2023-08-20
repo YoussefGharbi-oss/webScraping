@@ -11,5 +11,9 @@ headers = {
     "User-Agent": user__agent,
 }
 
-category_url = "https://www.imdb.com/feature/genre/?ref_=nv_ch_gr"
-category_tracker(category_url,headers,'moviesBycategory')
+def get_links_by_category():
+    """
+    Purpose: one
+    """
+    category_url = "https://www.imdb.com/feature/genre/?ref_=nv_ch_gr"
+    category_tracker(category_url,headers,'moviesBycategory')
