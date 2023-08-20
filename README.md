@@ -16,7 +16,7 @@ an IMDb web scraping project, a program or script is designed to interact with t
 ## Usage/Examples
 
 ```python
- Run script main to catch links 
+Run script main to catch links 
     "/bin/python3 /home/user-pc/webScraping/main.py"
 
 run script categoryScrape.py to catch all categories links
